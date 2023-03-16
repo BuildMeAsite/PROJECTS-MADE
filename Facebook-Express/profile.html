@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="profile-styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+</head>
+<body>
+    <div class="header-menu">
+        <div class="head-left">
+            <img src="media/facebook logo.svg" alt="" class="fb-logo">
+        </div>
+        <div class="head-mid">
+            <button class="Home" type="button">
+                <span class="material-symbols-outlined">
+                    home
+                </span>
+            </button>
+            <button class="Watch">
+                <span class="material-symbols-outlined">
+                    smart_display
+                </span>
+            </button>
+            <button class="Market">
+                <span class="material-symbols-outlined">
+                    storefront
+                </span>
+            </button>
+            <button class="Group">
+                <span class="material-symbols-outlined">
+                    groups_2
+                </span>
+            </button>
+        </div>
+        <div class="head-right">
+            <button class="chat">
+                <span class="material-symbols-outlined">
+                    chat_bubble
+                </span>
+            </button>
+            <button class="notification">
+                <span class="material-symbols-outlined">
+                    notifications
+                </span>
+            </button>
+            <div class="profile-div">
+                <img src="media/lion profile.jpg" class="main-profile">
+            </div>
+        </div>
+    </div>
+    <div class="head-mid-left">
+        <button class="Home Home2" type="button">
+            <span class="material-symbols-outlined">
+                home
+            </span>
+        </button>
+        <button class="Watch">
+            <span class="material-symbols-outlined">
+                smart_display
+            </span>
+        </button>
+        <button class="Market">
+            <span class="material-symbols-outlined">
+                storefront
+            </span>
+        </button>
+        <button class="Group">
+            <span class="material-symbols-outlined">
+                groups_2
+            </span>
+        </button>
+        <button class="more-menu">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </butto>
+    </div>
+    <div class="cover-profile">
+            <div class="cover-photo-div">
+                <img class="cover-photo" src="media/backgroundsamp.jpg" id="coverPhoto" >
+                <button class="change-cover">Edit cover photo</button>
+                    <img class="profile-pic" src="media/lion profile.jpg" alt="">
+                <button class="change-profile-btn">
+                    <span class="material-symbols-outlined change-span">
+                        photo_camera
+                    </span>
+                </button>
+            </div>
+            <div class="profile-photo-div">
+                <div class="name--div">
+                    <span class="UserFullName" id="UserFullName">Get the Full name</span>
+                    <span class="friendCount" id="friendCount">Get the count</span>
+                </div>
+
+            </div>
+
+    </div>
+    
+    <div class="logout-menu" id="logoutmenu">
+        <div class="mini-profiles">
+            <div class="profile-div">
+                <img src="media/lion profile.jpg" class="main-profile-logout">
+            </div>
+            <span class="mainfullname"></span>
+        </div>
+        <div class="logoutdiv">
+            <div class="logout-icon">
+                <span class="material-symbols-outlined">
+                    logout
+                </span>
+            </div>
+
+            <span>Logout</span>
+        </div>
+    </div>
+    <dialog class="UploadPhotodiv">
+        <input type="file" id="uploadPhoto" class="uploadPhoto">
+        <button class="btnSave" id="btnSave">Save</button>
+        <button class="btnClose" id="btnClose">Close</button>
+    </dialog>
+    <script src="profile-script.js"></script>
+</body>
+</html>

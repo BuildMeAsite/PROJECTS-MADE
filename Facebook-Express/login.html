@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - login or sign up</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="child-container-left">
+            <img src="media/facebook logo.svg" class="fblogo">
+            <h1 class="below-logo">Connect with friends and the world around you on Facebook.</h1>
+        </div>
+        <div class="mother-container-right">
+            <div class="child-container-right">
+                <input type="email" class="username" placeholder="Email">
+                <input type="password" class="userpass" placeholder="Password">
+                <button class="loginbtn" id="loginbtn">Log In</button>
+                <a href="https://www.youtube.com/watch?v=D3br71uBan8&t=127s&ab_channel=Howtosolveit" class="forgot" target="_blank">Forgot password?</a>
+                <div class="footer">
+                    <button class="createbtn" id="createbtn"> Create new account</button>
+                </div>
+            </div>
+            <div class="footertext">
+                <strong>Create a Page</strong><span> for a celebrity, brand or business.</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!--MODAL SECTION-->
+
+
+    <dialog class="modaldialog-main">
+        <form  class="modaldialog">
+            <div class="modal-head">
+                <button class="modal-close" id="modal-close">
+                    <span class="material-symbols-outlined">
+                    close
+                    </span>
+                </button>
+                <h1 class="headertext">Sign Up</h1>
+                <span class="spanheader">It's quick and easy</span>
+            </div>
+            <div class="modal-mid-upper">
+                <input type="text" class="inputFN" placeholder="First name" id="inputFN">
+                <input type="text" class="inputLN" placeholder="Last Name" id="inputLN">
+            </div>
+            <div class="modal-mid-lower">
+                <input type="email" class="inputUser" placeholder="Email" id="inputUser">
+                <input type="password" class="newpass" placeholder="New password" id="newpass">
+            </div>           
+            <div class="modal-bday-upper"><!--Add a tool tip: Click for more information-->
+                <div class="bday-div">
+                    <label class="main-label">Birthday
+                    </label>
+                    <span class="material-symbols-outlined helptooltip">
+                        help
+                        </span>
+                </div>
+            </div>
+            <div class="modal-bday-lower">
+                    <select name="month" id="month"></select>
+                    <select name="day" id="day"></select>
+                    <select name="year" id="year"></select>
+            </div>
+            <div class="modal-gender-upper">
+                <div class="bday-div">
+                    <label class="main-label">Gender
+                    </label>
+                    <span class="material-symbols-outlined helptooltip">
+                        help
+                        </span>
+                </div>
+            </div>
+            <div class="modal-gender-mid">
+                <div>
+                    <label for="male" class="gender-lbl">Male</label>
+                    <input type="radio" class="male rad" id="male" name="gender">
+                </div>
+                <div>
+                    <label for="female" class="gender-lbl">Female</label>
+                    <input type="radio" class="female rad" id="female" name="gender">
+                </div>
+                <div>
+                    <label for="custom" class="gender-lbl">Custom</label>
+                    <input type="radio" class="custom rad" id="custom" name="gender">
+                </div>
+            </div>
+            <div class="modal-gender-lower"></div>
+
+            <div class="setprofile">
+                Please set your profile
+                <div>
+                    <input type="file" id="fileCaptured">
+                </div>
+                <div class="previewfile">
+                    <img class="filePreview" src="" alt="">
+                </div>
+                <div class="signupdiv">
+                <input type="button" class="signupbtn" id="signupbtn" value="Sign Up">
+            </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-footer-upper">
+                    <span>People who use our service may have uploaded your contact information to Facebook. <a href="#"> Learn more.</a></span>
+                </div>
+                <div class="modal-footer-lower">
+                    <span>By clicking Sign Up, you agree to our </span>
+                    <a href="#">Terms, </a><a href="#">Privacy Policy </a>
+                    <span>and </span> <a href="#">Cookies Policy.</a>
+                    <span>You may receive SMS Notifications from us and can opt out any time.</span>
+                </div>
+            </div>
+        </form>
+    </dialog>
+
+
+    <script src="script.js" type=""></script>
+    
+</body>
+</html>
